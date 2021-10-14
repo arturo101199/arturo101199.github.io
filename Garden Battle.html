@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Nexus Defense</title>
+		<title>Garden Battle</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -42,10 +42,11 @@
 									<hr class="major" />
 
 									<h2>The Project</h2>
-									<p> This project was my Final Degree Work. The game is a battle simulator, where 4 different types of insects fight each other in order to win the game.
-										Each one has its own strategy in order to kill the rest. The player can choose how many animals want of each type...
+									<p> This project was my Final Degree Work. The game is a battle simulator, where 4 different types of insects fight each other in order to destroy their bases for winning
+										the game. Each one has its own strategy in order to kill the rest. The player can choose how many species want of each type, with a maximum of 100 units. After selecting
+										the units, the bases of each one are randomly generated as well as the terrain. Then the insects can try to kill each other.
 									</p>
-									<p> The length of the project was 4 months. We released a fully playable demo and decided to move on to other projects.</p>
+									<p> The length of the project was 4 months and was successfully completed.</p>
 									<div class="projectLinks">
 									<a href="https://arturo101199.itch.io/garden-battle"> <img src="images/itch_io.png" alt="">
 										<p><i>Itch.io</i></p> </a>
@@ -55,13 +56,17 @@
 
 									<hr class="major" />
 
-									<h2>My Role</h2>
-									<p>In this project, I was in charge of programming all the behaviors of the turrets. Detecting enemies, firing at them, slowing them down, generating projectiles, and so on.
-										 All those kinds of details were done by me. A total of 17 turrets were made for this game, many of them with particular behaviors. Here are some of these turrets:
+									<h2>Technical Details</h2>
+									<h3>AI System</h3>
+									<p>The most important part of this game is the AI. I developed a hybrid system between <b>Hierarchical State Machines</b> Hierarchical State Machines and <b>Behavior Trees</b>.
 									</p>
+									<p>The state of the unit is selected through the state machine, and, the actions and the transitions are handled by the behavior trees. </p>
+									<p>Since it is a Hierarchical State Machine, there are only a few transitions that the system has to check, and the general behavior is well divided in sub behaviors.</p>
+									<img src="images/StateMachineExample1.png" alt="" width="100%" style="max-width: 1000px;">
+									<p style="max-width: 1000px;"><i>Example of an state machine. The state with yellow border is the current one, and the red arrows are the transitions that must be checked.</i></p>
 									<section class="myRole">
 										<article>
-											<img class="image" src="images/basic Turret.gif" alt="">
+											<img class="image" src="images/20Battle.gif" alt="" style="width: 350px;">
 											<h4 style="text-align: center;"> <i>Basic turret</i></h4>
 										</article>
 										<article>

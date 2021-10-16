@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>Garden Battle</title>
@@ -50,7 +46,7 @@
 									<div class="projectLinks">
 									<a href="https://arturo101199.itch.io/garden-battle"> <img src="images/itch_io.png" alt="">
 										<p><i>Itch.io</i></p> </a>
-									<a href="https://github.com/arturo101199/GardenBattle"> <img src="images/GithubN.png" alt="">
+									<a href="https://github.com/arturo101199/GardenBattle"> <img src="images/Github.png" alt="">
 										<p><i>Github</i></p> </a>
 									</div>
 
@@ -62,131 +58,72 @@
 									</p>
 									<p>The state of the unit is selected through the state machine, and, the actions and the transitions are handled by the behavior trees. </p>
 									<p>Since it is a Hierarchical State Machine, there are only a few transitions that the system has to check, and the general behavior is well divided in sub behaviors.</p>
-									<img src="images/StateMachineExample1.png" alt="" width="100%" style="max-width: 1000px;">
-									<p style="max-width: 1000px;"><i>Example of an state machine. The state with yellow border is the current one, and the red arrows are the transitions that must be checked.</i></p>
-									<section class="myRole">
+									<section class="GardenBattle AISystem">
 										<article>
-											<img class="image" src="images/20Battle.gif" alt="" style="width: 350px;">
-											<h4 style="text-align: center;"> <i>Basic turret</i></h4>
+											<img src="images/StateMachineExample1.png" alt="">
+											<p><i>Example of a State Machine that you can make with the system I created. The state with a yellow border is the current one,
+												 and the red arrows are the transitions that must be checked.</i></p>
 										</article>
 										<article>
-											<img class="image" src="images/FlameThrower.gif" alt="">
-											<h4 style="text-align: center;"> <i>FlameThrower</i></h4>
+											<img src="images/AntStateMachines.png" alt="">
+											<p><i>The State Machine of the Ant.</i></p>
 										</article>
 										<article>
-											<img class="image" src="images/SporeSpawner.gif" alt="">
-											<h4 style="text-align: center;"> <i>Spore Spawner</i></h4>
-										</article>
-										<article>
-											<img class="image" src="images/EnergyExtractor.gif" alt="">
-											<h4 style="text-align: center;"> <i>Energy Extractor</i></h4>
-										</article>
-										<article>
-											<img class="image" src="images/HailStorm.gif" alt="">
-											<h4 style="text-align: center;"> <i>Hail Storm</i></h4>
-										</article>
-										<article>
-											<img class="image" src="images/RootTrap.gif" alt="">
-											<h4 style="text-align: center;"> <i>Root Trap</i></h4>
+											<img src="images/Transitions.png" alt="">
+											<p><i>The behavior trees for checking the transitions between states.</i></p>
 										</article>
 									</section>
-								</section>
+									<h3>Terrain Generation</h3>
+									<p> The terrain of each game is procedurally generated. In addition, the bases of each insect are randomly placed along the map, and the units adapt to the surface
+										for spawning correctly inside the garden.
+									</p>
+									<p style="margin-bottom: 1em;">Here are some examples of different terrains generated:</p>
+									<section class="GardenBattle TerrainGeneration Terrains">
+										<article>
+											<img src="images/Terrain1.png" alt="">
+										</article>
+										<article>
+											<img src="images/Terrain2.png" alt="">
+										</article>
+										<article>
+											<img src="images/Terrain3.png" alt="">
+										</article>
+									</section>
 
+									<p style="margin-bottom: 1em;">Here is the distribution of the units depending on the terrain:</p>
+									<section class="GardenBattle TerrainGeneration Spawns">
+										<article>
+											<img src="images/SpawnGenerationExample1.png" alt="">
+										</article>
+										<article>
+											<img src="images/SpawnGenerationExample2.png" alt="">
+										</article>
+									</section>
+
+									<hr class="major" />
+									<h2> Extra images </h2>
+
+									<img src="images/GBCombat.gif" alt="" width="50%" style="min-width: 300px;" class="image">
+									<p> <i> Battle between an ant and a wasp </i></p>
+
+									<section class="GardenBattle ExtraImages">
+										<article>
+											<img src="images/20Battle.gif" alt="" class="image">
+											<p> <i> Battle with 20 units of each insect (seen from a top view with icons)</i></p>
+										</article>
+										<article>
+											<img src="images/50Battle.gif" alt="" class="image">
+											<p> <i> Battle with 50 units of each insect (seen from a top view with icons)</i></p>
+										</article>
+										<article>
+											<img src="images/100Battle.gif" alt="" class="image">
+											<p> <i> Battle with 100 units of each insect (seen from a top view with icons)</i></p>
+										</article>
+									</section>
+
+								</section>
 						</div>
 					</div>
-
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
-
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="generic.html">Generic</a></li>
-										<li><a href="elements.html">Elements</a></li>
-										<li>
-											<span class="opener">Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Etiam Dolore</a></li>
-										<li><a href="#">Adipiscing</a></li>
-										<li>
-											<span class="opener">Another Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Maximus Erat</a></li>
-										<li><a href="#">Sapien Mauris</a></li>
-										<li><a href="#">Amet Lacinia</a></li>
-									</ul>
-								</nav>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Ante interdum</h2>
-									</header>
-									<div class="mini-posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-									</div>
-									<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul>
-								</section>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-										<li class="icon solid fa-phone">(000) 000-0000</li>
-										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-										Nashville, TN 00000-0000</li>
-									</ul>
-								</section>
-
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-								</footer>
-
-						</div>
-					</div>
-
 			</div>
 
 		<!-- Scripts -->
